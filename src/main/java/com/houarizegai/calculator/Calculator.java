@@ -410,7 +410,7 @@ public class Calculator {
         btnPower.setVisible(false);
 
         btnLog = initBtn("ln", x[4], y[3], event -> {
-            if (Pattern.matches("([-]?\\d+[.]\\d*)|(\\d+)", inText.getText()))
+            if (Pattern.matches("  ([-]?\\d+[.]\\d*)|(\\d+)", inText.getText()))
                 if (go) {
                     val = Math.log(Double.parseDouble(inText.getText()));
                     if (Pattern.matches("[-]?[\\d]+[.][0]*", String.valueOf(val))) {
